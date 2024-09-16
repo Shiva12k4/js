@@ -29,4 +29,10 @@ console.log(typeof numberInValue2);
 // let isLoggedIn="",0//false
 let isLoggedIn=1;//"hi"true
 let booleanisLoggedIn =Boolean(isLoggedIn);
-console.log(booleanisLoggedIn)
+console.log(booleanisLoggedIn);
+
+let number=33;
+let convertInString=String(number);
+console.log(convertInString);
+console.log(typeof convertInString);//string converted 33
+
