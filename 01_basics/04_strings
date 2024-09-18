@@ -1,0 +1,11 @@
+let data={
+    name:"shivam",
+    profile:"developer",
+    Number:20,
+}
+console.log(`${data.name} this side , working as a ${data.profile} , fav number is ${data.Number}`)
+
+let gameName=new String("shivam");
+console.log(gameName);//typeof--object, new keyword makes things object
+console.log(gameName[0])//s
+console.log(gameName.toUpperCase());

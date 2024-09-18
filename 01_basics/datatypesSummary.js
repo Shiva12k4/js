@@ -31,4 +31,29 @@ console.log('hi');
     obj: typeof obj,    // 'object'
     fun: typeof fun     // 'function'
   });
+
+  
+  //Stack(primitive) and heap(non-primitive) memories
  
+//stack
+let user1="shivam sharma";
+let updateuser = user1;
+updateuser = "sam"
+console.log(user1);
+console.log(updateuser);
+
+//copy of user name created and changes occur in that , that's how stack memory works.
+
+//heap memory
+let worker={
+name:'rj',
+id:'a@',
+}
+let newworker=worker;
+newworker.id='b@';
+
+console.log(worker.id);//b@
+console.log(newworker.id);//b@
+//here in heap , no copy is created data is taken from same reference.and if data change, it changes for both.
+
+

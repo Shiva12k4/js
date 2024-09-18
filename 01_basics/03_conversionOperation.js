@@ -70,5 +70,13 @@
  //>,< in this case null is converted in 0 in js.
  
  console.log("2"==2);
+
+
+ //Stack(primitive) and heap(non-primitive) memories
  
- 
+//stack
+let user1="shivam sharma";
+let updateuser = user1;
+console.log(user1);
+console.log(updateuser);
+
