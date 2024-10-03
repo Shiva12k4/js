@@ -59,6 +59,7 @@ let obj2={3:'c',4:'d'};
 let obj3={...obj1,...obj2};
 console.log(obj3);
 
+//from database we will get data in array of object
 
 
 
