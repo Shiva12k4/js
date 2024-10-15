@@ -42,3 +42,20 @@ if(true){
     
 }
 //console.log(usernames); not defined
+
+
+//+++++++++++++++++++++++++intersting point++++++++++++++++++++++
+//hoisting
+
+console.log(addOne(5));//o/p-6       The addOne function is a function declaration, and declarations are hoisted,
+
+function addOne(num){
+    return num +1;
+}
+addOne(5);
+
+console.log(addTwo(5));//error     The addTwo function is a function expression (assigned to a let variable), and expressions are not hoisted. 
+
+let addTwo =function(num){
+    return num + 2;
+}
