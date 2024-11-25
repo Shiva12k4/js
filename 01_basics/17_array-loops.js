@@ -91,4 +91,7 @@ const arrObj=[
     "id":3
 }
 ]
-console.log(arrObj[2].name);
+arrObj.forEach((items)=>{
+console.log(items.name);
+
+})
