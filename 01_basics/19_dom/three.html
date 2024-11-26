@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul class="language">
+        <li>javascript</li>
+    </ul>
+    <script>
+        //simple method to create li and append. if tree is bigger then it has to traverse whole code.
+        function addLanguage(langName){
+const li=document.createElement('li');
+li.innerHTML=`${langName}`;
+
+const parentL=document.querySelector('.language');
+parentL.appendChild(li);
+        }
+        addLanguage('python')
+        addLanguage('typescript');
+
+ //method 2 
+ 
+ function addOptiLanguage(langName){
+      const li=   document.createElement('li');
+      li.appendChild(document.createTextNode(langName));
+      document.querySelector('.language').appendChild(li);
+ }
+ addOptiLanguage('c++');
+ addOptiLanguage('python');
+
+ 
+ //edit
+
+ const secondlang=document.querySelector('li:nth-child(2)');
+ //secondlang.innerHTML="Mojo";  this is ok 
+secondlang.textContent="Mojo";
+const newli=document.createElement('li');
+newli.textContent="java";
+secondlang.replaceWith(newli)
+
+
+
+    </script>
+</body>
+</html>

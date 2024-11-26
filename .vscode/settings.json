@@ -1,3 +1,4 @@
 {
-    "files.readonlyFromPermissions": true
+    "files.readonlyFromPermissions": true,
+    "liveServer.settings.port": 5501
 }
