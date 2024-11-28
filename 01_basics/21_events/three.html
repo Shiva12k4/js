@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>async</title>
+</head>
+<body>
+    <h1>Async 2.0 in js</h1>
+    <button id="stop">stop</button>
+    <button id="start">start</button>
+    <script>
+       let abc= function(){
+            console.log('hi');
+            
+        }
+        let interval= "";
+       document.querySelector('#start').addEventListener('click',()=>{
+        interval=setInterval(abc,2000);
+           })
+        document.querySelector('#stop').addEventListener('click',()=>{
+            clearInterval(interval);
+        })
+         
+
+    </script>
+</body>
+</html>

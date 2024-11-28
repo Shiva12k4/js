@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>async</title>
+</head>
+<body>
+    <h1>Async in js</h1>
+    <button id="stop">stop</button>
+    <script>
+        const shivam=function(){
+            console.log("hi shivam")
+        }
+        setTimeout(shivam,2000);
+
+
+        let heading= function(){
+            document.querySelector('h1').innerHTML='new heading'
+        }
+      let setT=  setTimeout(heading,5000);
+
+
+        //clear timeout is used to remove the execution of settimeout.
+        //isme hm pass krte h jis settimeout ko rokna h uska reference like yha isko setT variable m store kiya h.
+
+      let cancelSettimeout=  document.querySelector('#stop').addEventListener('click',()=>{
+            clearTimeout(setT);
+        })
+    </script>
+</body>
+</html>
